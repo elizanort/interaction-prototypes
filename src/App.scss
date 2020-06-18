@@ -1,0 +1,38 @@
+.inputWrapper{
+    display: flex;
+    justify-content: center;
+    border-radius: 8px;
+    padding: .5rem;
+    margin: 1rem;
+    border: 2px solid gray;
+    width: fit-content;
+
+    &:hover{
+        border: 2px solid blue;
+        transition-duration: box-shadow .5s;
+    }
+
+    .icon{
+        width: 1rem;
+    }
+    
+    .input{
+        border: none;
+        
+    }
+
+    .day, .month{
+        width: 2rem;
+        text-align: center;
+    }
+
+    .year{
+        width: 3rem;
+        text-align: center;
+    }
+
+    span{
+        color: rgb(175, 174, 174);
+        
+    }
+}
