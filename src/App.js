@@ -12,6 +12,8 @@ class App extends Component {
       notBorn: "",
     },
 
+    emptyZodiac:'',
+
     zodiacs: {
       capricorn: <img src="./img/capricorn.svg"/>,
       aquarius: <img src="./img/capricorn.svg"/>,
@@ -32,7 +34,18 @@ class App extends Component {
     let value = event.target.value;
     this.setState({[name]:value});
 
-    if (this.state.year)
+    if (this.state.month >= 11 && <= 12) && (this.state.day )
+
+    if (this.state.month === 12 && this.state.day < 22){
+      this.state.emptyZodiac = this.state.zodiacs.capricorn
+    }
+    switch (name) {
+      case 'capricorn':
+        if( this.state.month === 12 && this.state.day < 22){
+          emptyZodiac = this.state.zodiacs.sagittarius
+        }
+    }
+    
   };
 
 
@@ -41,7 +54,7 @@ class App extends Component {
     return (
       <div className="inputWrapper">
         <div className="icon">
-          
+          {this.state.emptyZodiac}
         </div>
         <input
           name="month"
