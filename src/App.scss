@@ -1,23 +1,30 @@
 .inputWrapper{
     display: flex;
     justify-content: center;
+    align-items: center;
     border-radius: 8px;
     padding: .5rem;
     margin: 1rem;
-    border: 2px solid gray;
+    border: px solid gray;
     width: fit-content;
+   
 
     &:hover{
-        border: 2px solid blue;
+        border: 1px solid blue;
         transition-duration: box-shadow .5s;
     }
 
-    .icon{
-        width: 1rem;
+    .zodiac{
+        width: 2rem;
+        height: 2rem;
+        padding: 0rem 1rem;
     }
     
     .input{
         border: none;
+        &:active{
+            border: none;
+        }
         
     }
 
